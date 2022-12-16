@@ -51,7 +51,7 @@ Stampiamo il nostro array mettendo gli insegnanti in un rettangolo grigio e i PM
     
     <?php for( $i=0; $i < count($arrayChiavi); $i++){ ?>
         <?php if($arrayChiavi[$i] == 'teachers'){ ?>
-            <div class="bg-secondary">
+            <div class="bg-secondary px-2">
             <?php for( $k=0; $k < count( $db['teachers']); $k++){ ?>
                 <ul>
                     <li>
@@ -62,7 +62,7 @@ Stampiamo il nostro array mettendo gli insegnanti in un rettangolo grigio e i PM
             </div>
 
         <?php } else { ?>
-            <div class="bg-success">
+            <div class="bg-success px-2">
             <?php for( $k=0; $k < count( $db['pm']); $k++){ ?>
                 <ul>
                     <li>
